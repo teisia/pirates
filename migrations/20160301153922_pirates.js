@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
     table.string('poison');
     table.string('accessory');
     table.text('image_url');
+    table.timestamps();
   })
 };
 

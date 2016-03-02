@@ -1,6 +1,11 @@
-<div ng-repeat="pirate in pirates">
-  <img src="{{pirate.image_url}}">
-  <p>{{pirate.name}}</p>
-  <p>{{pirate.poison}}</p>
-  <p>{{pirate.accessory}}</p>
-</div>
+<h1>Pirates</h1>
+<table class="table-responsive" ng-repeat="pirate in pirates">
+  <tr>
+    <td><img src="{{pirate.image_url}}"></td>
+    <td>
+      <p class="name">{{pirate.name}}</p>
+      <p><strong>Poison:</strong> {{pirate.poison}}</p>
+      <p><strong>Accessory:</strong> {{pirate.accessory}}</p>
+    </td>
+  </tr>
+</table>
