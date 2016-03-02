@@ -1,3 +1,5 @@
-app.controller('PiratesController', function($scope) {
-  $scope.sentence = "hot sauce in my bag, swag";
-})
+app.controller('PiratesController', ['$scope', 'PiratesService', function($scope, PiratesService) {
+  PiratesService.all().then(function(pirates) {
+    $scope.pirates = pirates;
+  })
+}])

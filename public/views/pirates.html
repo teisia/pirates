@@ -1,1 +1,6 @@
-<h1>{{sentence}}</h1>
+<div ng-repeat="pirate in pirates">
+  <img src="{{pirate.image_url}}">
+  <p>{{pirate.name}}</p>
+  <p>{{pirate.poison}}</p>
+  <p>{{pirate.accessory}}</p>
+</div>
